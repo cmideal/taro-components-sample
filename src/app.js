@@ -31,9 +31,16 @@ class App extends Component {
       'pages/component/pages/navigator/navigator',
       'pages/component/pages/redirectPage/redirectPage',
       'pages/component/pages/navigatePage/navigatePage',
-      'pages/about/about',
       'pages/component/pages/camera/camera'
     ],
+    subPackages: [
+        {
+            "root": "addons/about/",
+            "pages": [
+              'about'
+            ]
+        }
+      ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -49,12 +56,6 @@ class App extends Component {
           text: '组件',
           iconPath: 'asset/component/view.png',
           selectedIconPath: 'asset/component/view_red.png'
-        },
-        {
-          pagePath: 'pages/about/about',
-          text: '关于',
-          iconPath: 'asset/component/nav.png',
-          selectedIconPath: 'asset/component/nav_red.png'
         }
       ]
     }
